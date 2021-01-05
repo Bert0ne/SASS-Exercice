@@ -48,6 +48,8 @@ body {
         color: white;
         cursor: pointer;
         outline: none;
+        transition: 1s;
+
         // padding: 0 10px;
         // margin: 0 40px;
 
@@ -55,9 +57,8 @@ body {
 
     }
 
-    .green {
+    .btn__green {
         background-color: rgb(104, 252, 104);
-        transition: 1s;
         @extend .btn;
 
 
@@ -68,31 +69,29 @@ body {
 
     }
 
-    .blue {
+    .btn__blue {
         margin-right: 25px;
         background-color: blue;
-        transition: 1s;
         @extend .btn;
 
 
         &:hover {
             border: 2px solid rgb(0, 4, 12);
-            background-color: rgb(136, 143, 247);
+            background-color: rgb(5, 10, 83);
         }
     }
 
-    .yellow {
+    .btn__yellow {
         margin-top: 34px;
         margin-right: 15px;
         background-color: orange;
-        transition: 1s;
         @extend .btn;
 
 
 
         &:hover {
-            border: 2px solid rgb(58, 92, 7);
-            background-color: rgb(85, 83, 0);
+            border: 2px solid rgb(201, 204, 6);
+            background-color: rgb(196, 192, 5)
         }
     }
 
