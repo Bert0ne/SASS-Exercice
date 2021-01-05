@@ -46,47 +46,63 @@ body {
         height: 46px;
         border: none;
         color: white;
-
+        cursor: pointer;
+        outline: none;
         // padding: 0 10px;
         // margin: 0 40px;
 
 
-        &--green {
-            background-color: rgb(104, 252, 104);
-            transition: 1s;
+
+    }
+
+    .green {
+        background-color: rgb(104, 252, 104);
+        transition: 1s;
+        @extend .btn;
 
 
-            &:hover {
-                border: 2px solid greenyellow;
-                background-color: rgb(41, 131, 20);
-            }
+        &:hover {
+            border: 2px solid greenyellow;
+            background-color: rgb(41, 131, 20);
         }
 
-        &--blue {
-            margin-right: 25px;
-            background-color: blue;
-            transition: 1s;
+    }
+
+    .blue {
+        margin-right: 25px;
+        background-color: blue;
+        transition: 1s;
+        @extend .btn;
 
 
-            &:hover {
-                border: 2px solid rgb(0, 4, 12);
-                background-color: rgb(136, 143, 247);
-            }
-        }
-
-        &--yellow {
-            margin-top: 34px;
-            margin-right: 15px;
-            background-color: yellow;
-            transition: 1s;
-
-
-
-            &:hover {
-                border: 2px solid rgb(58, 92, 7);
-                background-color: rgb(85, 83, 0);
-            }
+        &:hover {
+            border: 2px solid rgb(0, 4, 12);
+            background-color: rgb(136, 143, 247);
         }
     }
 
+    .yellow {
+        margin-top: 34px;
+        margin-right: 15px;
+        background-color: orange;
+        transition: 1s;
+        @extend .btn;
+
+
+
+        &:hover {
+            border: 2px solid rgb(58, 92, 7);
+            background-color: rgb(85, 83, 0);
+        }
+    }
+
+    .isDisabled {
+        background-color: gray;
+        cursor:none;
+
+        &:hover {
+            background-color: gray;
+            border: none;
+        }
+    }
 }

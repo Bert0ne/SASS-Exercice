@@ -26,31 +26,39 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     width: 660px; }
-  .container .btn {
+  .container .btn, .container .green, .container .blue, .container .yellow {
     font-size: 32px;
     border-radius: 18px;
     width: 270px;
     height: 46px;
     border: none;
-    color: white; }
-    .container .btn--green {
-      background-color: #68fc68;
-      transition: 1s; }
-      .container .btn--green:hover {
-        border: 2px solid greenyellow;
-        background-color: #298314; }
-    .container .btn--blue {
-      margin-right: 25px;
-      background-color: blue;
-      transition: 1s; }
-      .container .btn--blue:hover {
-        border: 2px solid #00040c;
-        background-color: #888ff7; }
-    .container .btn--yellow {
-      margin-top: 34px;
-      margin-right: 15px;
-      background-color: yellow;
-      transition: 1s; }
-      .container .btn--yellow:hover {
-        border: 2px solid #3a5c07;
-        background-color: #555300; }
+    color: white;
+    cursor: pointer;
+    outline: none; }
+  .container .green {
+    background-color: #68fc68;
+    transition: 1s; }
+    .container .green:hover {
+      border: 2px solid greenyellow;
+      background-color: #298314; }
+  .container .blue {
+    margin-right: 25px;
+    background-color: blue;
+    transition: 1s; }
+    .container .blue:hover {
+      border: 2px solid #00040c;
+      background-color: #888ff7; }
+  .container .yellow {
+    margin-top: 34px;
+    margin-right: 15px;
+    background-color: orange;
+    transition: 1s; }
+    .container .yellow:hover {
+      border: 2px solid #3a5c07;
+      background-color: #555300; }
+  .container .isDisabled {
+    background-color: gray;
+    cursor: none; }
+    .container .isDisabled:hover {
+      background-color: gray;
+      border: none; }
