@@ -1,0 +1,10 @@
+$test: green;
+
+body {
+    background-color: $test;
+
+    p {
+        text-align: center;
+        color: #fff;
+    }
+}

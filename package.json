@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "scripts": {
+    "scss": "node-sass --watch scss -o css"
+  },
+  "name": "sass-training",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
