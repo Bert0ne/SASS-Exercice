@@ -1,10 +1,92 @@
-$test: green;
+@mixin center-box {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
 
 body {
-    background-color: $test;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
 
-    p {
-        text-align: center;
-        color: #fff;
+    @include center-box;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    h1 {
+        font-size: 64px;
+        padding: 0;
     }
+}
+
+
+
+.container {
+    @include center-box;
+    flex-direction: column;
+
+    width: 1440px;
+
+
+    .container__buttons {
+        @include center-box;
+        justify-content: space-around;
+
+        flex-wrap: wrap;
+        width: 660px;
+
+    }
+
+    .btn {
+        font-size: 32px;
+        border-radius: 18px;
+        width: 270px;
+        height: 46px;
+        border: none;
+        color: white;
+
+        // padding: 0 10px;
+        // margin: 0 40px;
+
+
+        &--green {
+            background-color: rgb(104, 252, 104);
+            transition: 1s;
+
+
+            &:hover {
+                border: 2px solid greenyellow;
+                background-color: rgb(41, 131, 20);
+            }
+        }
+
+        &--blue {
+            margin-right: 25px;
+            background-color: blue;
+            transition: 1s;
+
+
+            &:hover {
+                border: 2px solid rgb(0, 4, 12);
+                background-color: rgb(136, 143, 247);
+            }
+        }
+
+        &--yellow {
+            margin-top: 34px;
+            margin-right: 15px;
+            background-color: yellow;
+            transition: 1s;
+
+
+
+            &:hover {
+                border: 2px solid rgb(58, 92, 7);
+                background-color: rgb(85, 83, 0);
+            }
+        }
+    }
+
 }
